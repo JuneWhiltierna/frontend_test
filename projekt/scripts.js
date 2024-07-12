@@ -9,7 +9,7 @@ function resetPage() {
 
 function appendName() {
     const header = document.querySelector('.profile_header');
-    const nameText = ' - Imię Nazwisko';
+    const nameText = 'Adrianna Wnorowska';
     if (header.innerHTML.includes(nameText)) {
         header.innerHTML = header.innerHTML.replace(nameText, '');
     } else {
