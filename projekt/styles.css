@@ -1,0 +1,102 @@
+body {
+    background-color: #0b0c10;
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.profile_header {
+    font-size: 40px;
+    color: #eff3f4;
+    padding: 20px;
+    text-align: center;
+}
+.header_line {
+    border-top: 2px solid #eff3f4;
+    margin: 0 20px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2d36;
+    padding: 20px;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #3c3f4a;
+    border-radius: 8px;
+}
+.column_header {
+    font-size: 20px;
+    color: #eff3f4;
+    padding: 20px;
+    text-align: center;
+}    
+
+.main_section {
+    margin: 20px 0;
+}
+main {
+    padding: 20px;
+}
+button {
+    width: 140px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 2px;
+}
+.replace_button {
+    background-color: transparent;
+}
+.replace_button:hover {
+    background: linear-gradient(45deg, #ff7e00, #ffbe00);
+    color: white;
+}
+button:hover {
+    background: linear-gradient(45deg, #ff7e00, #ffbe00);
+    color: white;
+}
+footer {
+    margin-top: 20px;
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.hidden_frame {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    background-color: #2a2d36;
+    border: 2px solid #eff3f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+}
+.hidden_frame.show {
+    display: block;
+    transform: translateY(0);
+}
+.hidden_frame button {
+    display: block;
+    margin: 10px auto;
+}
