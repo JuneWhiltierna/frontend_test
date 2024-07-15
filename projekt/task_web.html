@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Zadanie rekrutacyjne</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
     <header class="profile_header">
-        <section class="">Zadanie <b>rekrutacyjne</b></section> 
+        <section>Zadanie <b>rekrutacyjne</b></section> 
     </header>
 
     <div class="profile"> 
@@ -20,17 +18,15 @@
         <div class="columns">
             <div class="column">
                 <h2 class="column_header">Blok pierwszy</h2>
-                <div>
+                <div class="radio_button_group">
                     <label><input type="radio" name="option" value="option1"> Opcja pierwsza</label><br>
                     <label><input type="radio" name="option" value="option2"> Opcja druga</label><br>
                     <label><input type="radio" name="option" value="option3"> Opcja trzecia</label><br>
                 </div>
             </div>
             <div class="column">
-                <h2 class="column_header">
-                    Blok drugi
-                </h2>
-                <div>
+                <h2 class="column_header">Blok drugi</h2>
+                <div class="button_container">
                     <button class="replace_button">Zastąp</button>
                     <button>Doklej</button>
                 </div>
@@ -43,11 +39,18 @@
         </div>
     </div>
 
-    <footer>
+    <footer> 
         <button onclick="toggleFrame()">Pokaż</button>
+        
+        <div class="square">
+            <div class="square-text">
+            <div>CSS</div>
+            <div>IS</div>
+            <div>AWSOME</div>
+        </div></div>
     </footer>
     <div id="hidden_frame" class="hidden_frame">
-        <button onclick="resetPage()">Zresetuj ustawienia</button>
+        <button onclick="resetPage()">> Zresetuj ustawienia</button>
         <button onclick="appendName()">Pokaż dane osobowe</button>
     </div>
 
